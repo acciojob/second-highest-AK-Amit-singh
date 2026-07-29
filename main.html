@@ -3,15 +3,17 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>	
 	<script>
-		function secondHighest(arr) {
+	function secondHighest(arr) {
     if (arr.length <= 1) {
         return -Infinity;
     }
-	let same = true;
+
+    let same = true;
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] !== arr[0]) {
             same = false;
@@ -37,8 +39,9 @@
 
     return second;
 }
+	</script>
 
-
+    <script type="text/javascript" src="./script.js">
 </script>
 
 </body>
