@@ -11,6 +11,17 @@
     if (arr.length <= 1) {
         return -Infinity;
     }
+	let same = true;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] !== arr[0]) {
+            same = false;
+            break;
+        }
+    }
+
+    if (same) {
+        return -Infinity;
+    }
 
     let first = -Infinity;
     let second = -Infinity;
@@ -27,7 +38,6 @@
     return second;
 }
 
-	</script>
 
 </script>
 
